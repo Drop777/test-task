@@ -116,7 +116,7 @@ class Posts extends React.Component {
                     </TableCell>
                     <TableCell align="left">{post.body}</TableCell>
                     <TableCell align="left">{post.id}</TableCell>
-                    <TableCell><Link to={`/${userId}/posts/${post.id}/details`} style={{ color: 'black', textDecoration: 'none' }}><Button variant="contained">Details</Button></Link></TableCell>
+                    <TableCell><Link to={`/users/${userId}/posts/${post.id}/details`} style={{ color: 'black', textDecoration: 'none' }}><Button variant="contained">Details</Button></Link></TableCell>
                   </TableRow>
                 ))}
               </TableBody>

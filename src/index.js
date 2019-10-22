@@ -10,11 +10,12 @@ import { store } from './store/index';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <HashRouter basename="/users">
+  <HashRouter>
     <Provider store={store}>
       <App />
     </Provider>
-  </HashRouter>, document.getElementById('root'),
+  </HashRouter>,
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

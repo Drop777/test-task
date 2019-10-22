@@ -51,7 +51,7 @@ class Users extends React.Component {
                     <TableCell align="left">{user.username}</TableCell>
                     <TableCell align="left">{user.email}</TableCell>
                     <TableCell align="left">{user.address.city}</TableCell>
-                    <TableCell align="left"><Link to={`/${user.id}/posts`} style={{ color: 'black', textDecoration: 'none' }}><Button variant="contained">Posts</Button></Link></TableCell>
+                    <TableCell align="left"><Link to={`/users/${user.id}/posts`} style={{ color: 'black', textDecoration: 'none' }}><Button variant="contained">Posts</Button></Link></TableCell>
                   </TableRow>
                 ))}
               </TableBody>

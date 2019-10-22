@@ -11,8 +11,8 @@ class App extends React.Component {
     return (
       <>
         <Switch>
-          <Route path="/:userId?/posts/:postId?/details" render={(match) => <Details match={match} />} />
-          <Route path="/:userId?/posts" render={(match) => <Posts match={match} />} />
+          <Route path="/users/:userId?/posts/:postId?/details" render={(match) => <Details match={match} />} />
+          <Route path="/users/:userId?/posts" render={(match) => <Posts match={match} />} />
           <Route path="/" component={Users} />
         </Switch>
       </>
