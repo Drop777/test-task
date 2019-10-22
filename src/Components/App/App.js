@@ -9,13 +9,13 @@ import { Details } from '../Details/index';
 class App extends React.Component {
   render() {
     return (
-      <>
+      <div className="App">
         <Switch>
           <Route path="/users/:userId?/posts/:postId?/details" render={(match) => <Details match={match} />} />
           <Route path="/users/:userId?/posts" render={(match) => <Posts match={match} />} />
           <Route path="/" component={Users} />
         </Switch>
-      </>
+      </div>
     );
   }
 }
